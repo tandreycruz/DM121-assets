@@ -5,32 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Basics</title>
     <style>
-        * {
+        :root {
+            font-size: 16px;
+            --mb: 2rem;
+            --secondary-color: rgb(239,143,0);
+        }
+        * {            
+            margin: 0;            
             padding: 0;
-            margin: 10px;
-            outline: 1px solid red;            
         }
-
-        html {
-            background-color: rgb(226,222,0);
-        }
-
         body {
-            background-color: aqua;
+            padding: 1rem;
+            background-color: rgb(63,69,108);
+            color: white;
+        }
+        
+        #css-section {
+            background-color: rgba(0, 9, 12, 0.269);
+            padding: 1rem;
+            margin-bottom: var(--mb);
+            h2 {
+            border-bottom: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            }
+            p {
+                margin-bottom: 0;
+            }
         }
 
-        h1 {
-            background-color: blueviolet;
+        h1, h2, p {
+            margin-bottom: var(--mb);
+            color: rgb(127,255,212);
         }
-
-        h2 {
-            background-color: bisque;
-        }
-
         p {
-            background-color: brown;
-            color: aliceblue;
-        }
+            color: rgb(214,194,194);
+        }        
     </style>
 </head>
 <body>
@@ -39,7 +48,7 @@
         <h2>HTML</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis accusantium laboriosam velit cumque quas laborum maxime! Dolores, nihil, impedit eius vel eaque veniam illum assumenda omnis eos laudantium distinctio corporis.</p>
     </section>
-    <section>
+    <section id="css-section">
         <h2>CSS</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis accusantium laboriosam velit cumque quas laborum maxime! Dolores, nihil, impedit eius vel eaque veniam illum assumenda omnis eos laudantium distinctio corporis.</p>
     </section>
