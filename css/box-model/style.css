@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    /*background-color: rgb(151,134,168);
+    background-image: url(night.jpg);
+    background-size: cover;*/
+    background: url(night.jpg) no-repeat;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    background-color: aliceblue;
+    border: 5px double rgb(51,10,106);
+    padding: 1rem;
+    width: fit-content;
+    color: white;
+    background: linear-gradient(
+        172deg,
+        rgb(151,134,168,0.6) 0%,
+        rgb(123,0,255,1) 100%
+    );
+    text-shadow: 1px 1px black;        
+}
